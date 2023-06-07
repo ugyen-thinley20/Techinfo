@@ -214,19 +214,17 @@ a {
     }
     
 }
-@media screen and (max-width: 470px) {
-    div.container {
-        width: 90%;
-    }
-    .card{
-        width: 68%;
-        height: 44vh;
-        
-        
-    }
+@media screen and (max-width: 600px) {
     div.container {
         width: 100%;
     }
+    .card{
+        width: 90%;
+       
+ }
+    /* div.container {
+        width: 100%;
+    } */
     h1 {
         font-size: 28px;
     }
@@ -238,7 +236,7 @@ a {
     }
     ul.card-gallery-wrapper{
         grid-template-columns: repeat(auto-fill, minmax(350px, auto)); 
-        padding-left: 11%;
+        padding-left: 5%;
     
 
      }

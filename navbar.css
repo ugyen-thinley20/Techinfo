@@ -51,12 +51,13 @@ img {
 .navbar-links li:hover {
     background-color: rgb(176, 172, 172);
     border-radius: 9px;
+   
 }
 
 .toggle-button {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 40px;
+    right: 50px;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -72,15 +73,16 @@ img {
     border-radius: 10px;
 }
 
-@media screen and (max-width:470px) {
+@media screen and (max-width:600px) {
     .toggle-button {
-         display: flex;
+     display: flex;
          
     }
 
     .navbar-links {
          display: none;
-         width: 100%
+         width: 100%;
+        
     }
 
     .navbar {
@@ -98,28 +100,26 @@ img {
     }
 
     .navbar-links li a {
-         padding: .5rem 2rem;
+         padding: 10px 20px;
     }
 
     .navbar-links.active {
          display: flex;
     }
+    
     #logo{
         width: 100%;
     }
     img {
         width: 28%;
-        height: 11vh;
+        height: 13vh;
         padding-left: 30px;
     }
     .sub-menu-1{
         position: absolute;
-        top: 130px;
+        top: 190px;
         right: 0;
-        display: none;
-        z-index: 2;
-        mix-blend-mode: lighten;
-       
+        display: flex;
         
       }
       .sub-menu-1 ul li a{

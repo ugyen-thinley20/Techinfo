@@ -23,7 +23,7 @@ body {
   .footerText {
        color: #121010;
        text-align: top;
-  margin-top: 10px;
+       margin-top: 10px;
        padding-left: 50px;
        margin-right: 50px;
   }
@@ -55,13 +55,9 @@ body {
   .socMedia ul li {
        display: inline-block;
        min-width: 20px;
-       color: white;
-       text-align: center;
        background: #0E0D46;
        padding: 18px 26px;
-       text-decoration: none;
-       list-style: none;
-  
+     
   }
   
   .socMedia ul li:hover {
@@ -74,7 +70,7 @@ body {
   
   }
   
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 600px) {
        .socMedia li {
             float: none;
   
@@ -90,13 +86,12 @@ body {
             text-align: center;
        }
   
-       
        .socMedia {
             text-align: center;
             display: flex;
-            text-decoration: none;
+            /* text-decoration: none;
             list-style: none;
-            justify-content: space-between;
+            justify-content: space-between; */
             padding-left: 15px;
             gap: 20px;
        }
