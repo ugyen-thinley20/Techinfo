@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 20px;
+   /* background-image: url(/laptop/bg.jpg); */
+   background-size: cover;
+   background-repeat: no-repeat;
+  
+}
+
+    ul.content {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        width: 100%;
+        padding-left: 3%;
+    }
+    
+    
+    .content li {
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    
+    .hidden {
+        display: none;
+    }
+    
+
+.card li {
+    margin-bottom: 2px;
+    position: relative;
+}
+.card{
+    background-color: rgb(203, 194, 194);
+    width: 330px;
+    height: 634px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 4px 1px #888888;
+}
+.card-image{
+    background-color: gray;
+    height: 250px; 
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.laptop1{
+    background-image: url(/laptop/Acer\ Aspire\ 5\ slim.jpg);
+    
+   
+}
+.laptop2{
+    background-image: url(/laptop/Acer\ travelmate\ p6.jpg);
+}
+.laptop3{
+    background-image: url(/laptop/aspire\ 7\ a715.jpg);
+}
+.laptop4{
+    background-image: url(/laptop/dell\ 14.jpg);
+    background-position: center;
+}
+.laptop5{
+    background-image: url(/laptop/dell\ 15.jpg);
+    background-position: center;
+}
+.laptop6{
+    background-image: url(/laptop/inspiron\ 14\ 2in1.avif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+.card h1, h4{
+    padding: 10px;
+}
+
+.card:hover{
+    /* background-color: rgb(62, 62,62); */
+    color: rgb(18, 17, 17);
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 1s ease;
+    box-shadow: 0 0 5px 5px grey;
+}
+.card h3{
+    padding: 10px;
+    font-weight: lighter;
+}
+ul.topic {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+
+.topic li {
+    display: inline-block;
+    margin: 5px;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.topic li:hover {
+    padding: 10px 40px;
+}
+
+
+.topic li:first-child {
+    background-color:#20c679 ;
+}
+
+
+.topic li:nth-child(2) {
+    background-color:#f89672; 
+}
+
+
+.topic li:nth-child(3) {
+    background-color: #83b9f6;
+}
+@media screen and (max-width: 800px) {
+    ul.content{
+       grid-template-columns: repeat(2,1fr); 
+    }
+    
+}
+@media screen and (max-width: 470px) {
+   
+    
+    section.container {
+        width: 95%;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .topic li {
+        font-size: 16px;
+    }
+    .card h3 {
+        font-size: 16px;
+    }
+    ul.content{
+        grid-template-columns: repeat(1,1fr); 
+        padding-left: 50px;
+
+     }
+
+}
+
+.top{
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin-top: 30px;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+  
+  
+  .top:hover {
+    color: #0b0a0a;
+  }
+  
+  .top{
+    text-align: center;
+    color: #23a4f0;
+  }

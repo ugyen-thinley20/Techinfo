@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* MAIN IMG PART */
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://id-media.apjonlinecdn.com/magefan_blog/How_to_Fix_a_Laptop_That_Won_t_Charge_cover.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 3vw;
+}
+
+
+/* SECTION PART */
+.main {
+    margin-top: 20px;
+    
+}
+
+.main h3 {
+    font-size: 45px;
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
+.main-container h1::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color:white;
+    top: 67%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: tech 4s linear infinite;
+}
+@keyframes tech {
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+.top{
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  margin-top: 30px;
+  text-align: right;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+.top:hover {
+  color: #090908;
+}
+
+.sub-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container {
+    background: #fff;
+    margin: 10px 0 0 0;
+      margin-bottom: 21px;
+    width: 350px;
+    
+    padding: 10px;
+    line-height: 1.5;
+    color: #100f0f;
+    position: relative;
+   white-space: normal;
+   border-radius: 2%;
+    background-color: aliceblue;  
+    font-size: large;     
+}
+.container h3 {
+    color: #81c644;
+    font-size: 29px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+.container:hover{
+   transform: scale(1.1);
+   transition: 0.1s;
+   background-color: rgb(0, 0, 0, 0.1);
+   
+   
+}
+
+.autoSlides {display: none;
+
+}
+img {vertical-align: middle;
+ 
+}
+ 
+/* Slideshow container */
+.autoSlide-box {
+  width: 100%;
+  position: relative;
+  right: 1%;
+  margin: auto;
+  height: 50%;
+}
+ 
+/* Caption text */
+.cap {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+ 
+/* Number text (1/3 etc) */
+.slideNum {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+ 
+/* The dots/bullets/indicators */
+.doot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+  bottom: 40px;
+  
+}
+ 
+.active {
+  background-color: #717171;
+}
+.sliderimg{
+    width: 100%;
+    height: 20%;
+    background-size: cover;
+    
+}
+ 
+/* Fading animation */
+.fade {
+ 
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+ 
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+
+
+
+#para-img{
+  width: 50%;
+  height: 70vh;
+  background-image: url("project/go.jpg");
+  background-attachment:fixed;
+  background-position:center;
+  background-size: cover;
+  margin: 0 5px;
+  background-repeat: no-repeat;
+}
+#para{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: rgb(132, 140, 149);
+}
+.paragraph{
+  width: 50%;
+  font-size: 23px;
+  padding-left: 9px;
+  line-height: 1.8em;
+  font-family:sans-serif;
+  text-align: center;
+}
+#text1{
+  width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  color: black;
+  font-size: 42px;
+  flex-wrap: wrap;
+  font-family: 'Secular One', sans-serif;
+  
+}
+#text2{
+  font-size:30px;
+  font-weight: lighter;
+  color: #090908;
+  width: 70%;
+  position: absolute;
+  bottom: 30%;
+  left: 26%;
+}
+span{
+  font-family: 'Sigmar', cursive;
+  color: crimson;
+  
+}
+@media only screen and (max-width:470px){
+  .main-container {
+     height: 50vh;
+    width: 100%;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .main-container p {
+      font-size: 25px;
+  }
+  .main-container h1::before{
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    width: 100%;
+    top: 87%;
+    left: 50%;
+   }
+  
+  #para{
+      display: flex;
+      flex-direction: column;
+  }
+  #para-img{
+      width: 100%;
+      height: 250px;
+  }
+  .paragraph{
+      width: 97%;
+       padding-left: 20px;
+      line-height: 1.4em;
+      font-size: 19px;
+      margin: 10px 5px;
+      text-align: justify;
+  }
+  #p2{
+    margin-top: 2%;
+  }
+  .text {font-size: 11px
+  }
+  .autoSlide-box{
+    width: 100%;
+
+  }
+  
+  .sliderimg{
+    width: 100%;
+    height: 30vh;
+    padding-right: 5%;
+    
+  }
+    #text1 {
+      position: absolute;
+      top: 25%;
+      left: 32%;
+      font-size: 12px;
+      
+    }  
+    #text2{
+      font-size: 10px;
+      position: absolute;
+      top: 26%;
+      left: 26%;
+    }
+}
+
+
+
+.top:hover {
+  color: #0b0a0a;
+}
+
+.top{
+  text-align: center;
+  color: #23a4f0;
+}
+
+
+
+
+
+
+
+
+
+
+
